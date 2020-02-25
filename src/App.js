@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import rzcLogo from './reezocar.svg';
+import rzcLogo from './assets/images/reezocar.svg';
 
 const App = () => (
    <div className={css(styles.app)}>
