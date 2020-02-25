@@ -1,0 +1,12 @@
+{
+  "files.autoSave": "off",
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 3,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.next": true
+  }
+}
