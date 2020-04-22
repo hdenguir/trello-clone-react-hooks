@@ -106,6 +106,9 @@ body {
 .icon-trello-gold:before {
   content: '\E967';
 }
+.icon-gear:before {
+  content: '\E92C';
+}
 i {
   padding-right: 0.4rem;
 }

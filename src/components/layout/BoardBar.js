@@ -17,8 +17,8 @@ const BoardBar = () => {
               resetList();
           }}
         >
-          <i className="fas fa-power-off" /> Initialiser le jeux de
-          données
+          <span className="icon-sm icon-gear icon-white" />
+          Initialiser le jeux de données
         </button>
       </div>
     </section>
