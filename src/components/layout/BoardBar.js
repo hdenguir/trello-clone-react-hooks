@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     borderRadius: '0.3rem',
     cursor: 'pointer',
     display: 'inline-block',
-    fontWeight: '400',
+    fontWeight: '500',
     lineHeight: '20px',
     margin: '0',
     padding: '6px 12px',

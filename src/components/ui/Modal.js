@@ -432,6 +432,8 @@ const styles = StyleSheet.create({
     minHeight: '50px',
     padding: '8px 12px',
     textDecoration: 'none',
+    fontWeight: '500',
+    cursor: 'pointer',
     ':hover': {
       backgroundColor: 'rgba(9,30,66,.08)',
       boxShadow: 'none',
