@@ -78,7 +78,7 @@ const BoardContainer = () => {
             onClick={() => setShowForm(true)}
             className={css(styles.btn, styles.addListBtn)}
           >
-            <span className="icon-sm icon-add" /> {textBtn}
+            <span className="icon-sm icon-add icon-white" /> {textBtn}
           </button>
         )}
       </div>
@@ -130,8 +130,9 @@ const styles = StyleSheet.create({
     justifyContent: 'left',
     fontSize: '1.4rem',
     fontWeight: '400',
-    backgroundColor: 'rgba(226, 228, 230, .7)',
-    color: '#333',
+    //backgroundColor: 'rgba(226, 228, 230, .7)',
+    backgroundColor: 'hsla(0,0%,100%,.24)',
+    color: '#fff',
     padding: '1rem',
     borderRadius: '0.3rem',
     cursor: 'pointer',

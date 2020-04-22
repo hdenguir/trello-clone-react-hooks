@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     margin: '0',
     padding: '6px 12px',
     textAlign: 'center',
-    backgroundColor: '#5aac44',
+    backgroundColor: 'hsla(0,0%,100%,.24)',
     boxShadow: 'none',
     border: 'none',
     color: '#fff'

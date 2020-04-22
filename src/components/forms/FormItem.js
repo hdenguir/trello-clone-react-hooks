@@ -37,7 +37,7 @@ const FormItem = ({
         className={css(styles.close)}
         onClick={() => resetForm()}
       >
-        <span class="icon-lg icon-close" />
+        <span className="icon-lg icon-close" />
       </button>
     </div>
   </form>
@@ -110,7 +110,6 @@ const styles = StyleSheet.create({
     }
   },
   close: {
-    marginLeft: '1rem',
     border: 'none',
     background: 'none',
     fontSize: '2rem',
