@@ -17,8 +17,6 @@ const BoardPage = () => {
       onFollowCard(list, id, cardId),
     deleteCardItem: (list, id, cardId) =>
       onDeleteCardItem(list, id, cardId),
-    addItemCardDescription: (list, id, cardId, desc) =>
-      onAddItemCardDescription(list, id, cardId, desc),
     addItemCardFullDescription: (list, id, cardId, desc) =>
       onAddItemCardFullDescription(list, id, cardId, desc)
   });
@@ -126,43 +124,6 @@ const BoardPage = () => {
       updatedObj,
       ...list.slice(index + 1)
     ];
-    setState({
-      ...state,
-      list: updatedList
-    });
-    localStorage.setItem('tasks', JSON.stringify(updatedList));
-  };
-
-  const onAddItemCardDescription = (list, id, cardId, desc) => {
-    const index = list.findIndex((item) => item.id === id);
-    const cardIndex = list[index].cards.findIndex(
-      (card) => card.id === cardId
-    );
-
-    const updatedDesc = [
-      ...list[index].cards[cardIndex].descriptions,
-      desc
-    ];
-
-    const updatedCard = {
-      ...list[index].cards[cardIndex],
-      checklists: updatedDesc
-    };
-
-    const listCards = [
-      ...list[index].cards.slice(0, cardIndex),
-      updatedCard,
-      ...list[index].cards.slice(cardIndex + 1)
-    ];
-
-    const updatedObj = { ...list[index], cards: listCards };
-
-    const updatedList = [
-      ...list.slice(0, index),
-      updatedObj,
-      ...list.slice(index + 1)
-    ];
-
     setState({
       ...state,
       list: updatedList
